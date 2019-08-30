@@ -15,6 +15,7 @@ Example:
     output: [9, 12]
 */
 
+
 /*
 Brute Force
 
@@ -22,6 +23,7 @@ Brute Force
     Space: O(1), or constant
 
 */
+
 const twoSum1 = (nums, total) => {
     var result = [];
 
@@ -39,6 +41,7 @@ const twoSum1 = (nums, total) => {
 
 console.log(twoSum1([1, 2, 3], 4)); // [1, 3]
 console.log(twoSum1([3, 9, 12, 20], 21)); // [9, 12]
+
 
 /*
 Hash table
@@ -65,6 +68,7 @@ const twoSum2 = (nums, total) => {
 
 console.log(twoSum2([1, 2, 3], 4)); // [1, 3]
 console.log(twoSum2([3, 9, 12, 20], 21)); // [9, 12]
+
 
 /*
 Set
