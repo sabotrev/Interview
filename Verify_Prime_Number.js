@@ -35,6 +35,7 @@ function isPrime1(num) {
 console.log(isPrime1(7)); // true
 console.log(isPrime1(237)); // false
 
+
 /*
 Brute Force: for loop
 
@@ -52,6 +53,7 @@ function isPrime2(num) {
 
 console.log(isPrime2(7)); // true
 console.log(isPrime2(237)); // false
+
 
 /*
 Brute Force: square root

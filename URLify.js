@@ -13,11 +13,9 @@ Example:
     output: 'Mr.%20John%20Smith'
 */
 
-
 /*
 For loop
 */
-
 function urlify1(url, urlLength) {
     let newStr = '';
 
@@ -33,6 +31,7 @@ function urlify1(url, urlLength) {
 }
 
 console.log(urlify1('Mr John Smith     ', 13));
+
 
 /*
 ES2019 trimStart() & trimEnd() with RegExp object constructor

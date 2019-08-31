@@ -23,7 +23,6 @@ Brute Force
     Space: O(1), or constant
 
 */
-
 const twoSum1 = (nums, total) => {
     var result = [];
 
@@ -51,7 +50,6 @@ Hash table
 
     Notes: Each object lookup is O(1) and the loop is O(n).
 */
-
 const twoSum2 = (nums, total) => {
     const previousValues = {}
 
@@ -76,7 +74,6 @@ Set
     Time: O(n)
     Space: O(n)
 */
-
 const twoSum3 = (nums, total) => {
     const previousValues = new Set();
 
