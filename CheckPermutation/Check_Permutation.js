@@ -7,11 +7,9 @@ Description:
 Notes: Is it case sensitive? Is white space significant?
 
 Example:
-    input: num = 7
+    input: str1 = 'dog'
+        str2 = 'god'
     output: true
-
-    input: num = 237
-    output: false
 */
 
 
@@ -22,7 +20,6 @@ Sort with spread
     Space: O(1)
  */
 function checkPermutation1(str1, str2) {
-
     if (!str1 || !str2 || (str1.length !== str2.length)) {
         return false;
     }
@@ -32,3 +29,29 @@ function checkPermutation1(str1, str2) {
 
 console.log(checkPermutation1('dog', 'god'));
 console.log(checkPermutation1('dog', 'ogg'));
+
+/*
+Set
+
+    Time: O(n)
+    Space: O(1)
+ */
+function checkPermutation2(str1, str2) {
+    if (!str1 || !str2 || (str1.length !== str2.length)) {
+        return false;
+    }
+
+    let set1 = new Set(str1);
+    let set2 = new Set(str2);
+
+    for (let char of set1) {
+        if (!set2.has(char)) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+console.log(checkPermutation2('dog', 'god'));
+console.log(checkPermutation2('dog', 'ogg'));
