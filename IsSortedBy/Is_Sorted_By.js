@@ -4,7 +4,6 @@ Is Sorted By
     Description: Given two arrays, return true if the first array is sorted according to the second
         (ordering) array.
 
-
     Example:
         input: arr1 = ['cc', 'cb', 'bb', 'ac']
             arr2 = ['c', 'b', 'a']
