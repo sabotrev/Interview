@@ -37,3 +37,16 @@ const isSortedBy1 = (arr1, arr2) => {
 
 console.log(isSortedBy1(['cc', 'cb', 'bb', 'ac'], ['c', 'b', 'a'])); // true
 console.log(isSortedBy1(['a','b', 'c'], ['c', 'b', 'a'])); // false
+
+/*
+Using Array.prototype.every
+*/
+const isSortedBy2 = (arr1, arr2) => {
+    return arr1.every((element, i) => {
+        if (i === 0) return true;
+        return arr2.indexOf(element[0]) >= arr2.indexOf(arr1[i-1][0]);
+    })
+}
+
+console.log(isSortedBy2(['cc', 'cb', 'bb', 'ac'], ['c', 'b', 'a'])); // true
+console.log(isSortedBy2(['a','b', 'c'], ['c', 'b', 'a'])); // false
