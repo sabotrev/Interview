@@ -7,8 +7,7 @@ Description:
 Example:
     input: [1, 3, 5, 3, 1, 3, 1, 5]
     output: 4
-
-    The longest sequence that contains just 2 unique numbers is [3, 1, 3, 1]
+    explanation: The longest sequence that contains just 2 unique numbers is [3, 1, 3, 1]
 */
 
 
