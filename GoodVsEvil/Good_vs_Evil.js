@@ -41,7 +41,7 @@ Good vs. Evil
 
 
 /*
-
+With reduce
 */
 const goodVsEvil = (goodStr, evilStr) => {
     const goodMap = {
@@ -75,9 +75,9 @@ const goodVsEvil = (goodStr, evilStr) => {
     });
 
     if (goodTotal === evilTotal) {
-        return 'tie;'
+        return 'tie';
     } else if (goodTotal > evilTotal) {
-        return 'good'
+        return 'good';
     } else {
         return 'evil';
     }
