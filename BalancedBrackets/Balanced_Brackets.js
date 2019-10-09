@@ -43,7 +43,7 @@ const isBalanced = (str) => {
             }
         }
     }
-    
+
     return stack.length === 0;
 }
 
@@ -64,4 +64,4 @@ const doesMatch = (openChar, closeChar) => {
 
 console.log(isBalanced('()')); // true
 console.log(isBalanced('([)]')); // false
-console.log(isBalanced("[{()()}({[]})]({}[({})])((((((()[])){}))[]{{{({({({{{{{{}}}}}})})})}}}))[][][]")) // true
+console.log(isBalanced('[{()()}({[]})]({}[({})])((((((()[])){}))[]{{{({({({{{{{{}}}}}})})})}}}))[][][]')) // true
