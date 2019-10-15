@@ -33,13 +33,13 @@ class LinkedList:
             temp = temp.next
 
 
-linkList = LinkedList()
-linkList.push(4)
-linkList.push(3)
-linkList.push(2)
-linkList.push(1)
+linkedList = LinkedList()
+linkedList.push(4)
+linkedList.push(3)
+linkedList.push(2)
+linkedList.push(1)
 print("Original list")
-linkList.printList()
-linkList.reverse()
+linkedList.printList()
+linkedList.reverse()
 print("Reversed list")
-linkList.printList()
+linkedList.printList()
