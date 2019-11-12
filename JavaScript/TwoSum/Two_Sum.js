@@ -90,3 +90,28 @@ const twoSum3 = (nums, total) => {
 
 console.log(twoSum3([1, 2, 3], 4)); // [1, 3]
 console.log(twoSum3([3, 9, 12, 20], 21)); // [9, 12]
+
+
+/*
+Return indicies of the two values
+
+    Time: O(n)
+    Space: O(n)    
+*/
+const twoSumWithIndicies = (nums, target) => {
+    const previousValues = {}
+
+    for (let i = 0; i < nums.length; i++) {
+        const complement = target - nums[i];
+
+        if (previousValues[complement] !== undefined) {
+            return [previousValues[complement], i];
+        }
+
+        previousValues[nums[i]] = i;
+    }
+};
+
+console.log(twoSumWithIndicies([1, 2, 3], 4)); // [0, 2]
+console.log(twoSumWithIndicies([3, 9, 12, 20], 21)); //  [0, 2]
+console.log(twoSumWithIndicies([3, 3], 6)); // [0, 1]
