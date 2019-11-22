@@ -41,7 +41,7 @@ fun swapKotlinStyle(arr: IntArray, index1: Int, index2: Int): IntArray {
     return arr
 }
 
-fun main(arg: Array<String>) {
+fun main() {
     var arr: IntArray = intArrayOf(4, 3, 1, 2)
 
     selection_sort(arr, 0)
